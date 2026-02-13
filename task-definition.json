@@ -68,7 +68,7 @@
         "interval": 30,
         "timeout": 5,
         "retries": 3,
-        "startPeriod": 90
+        "startPeriod": 60
       },
       "systemControls": []
     }
@@ -77,35 +77,6 @@
   "executionRoleArn": "arn:aws:iam::727646476467:role/ecsTaskExecutionRole",
   "networkMode": "bridge",
   "volumes": [],
-  "requiresAttributes": [
-    {
-      "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
-    },
-    {
-      "name": "ecs.capability.execution-role-awslogs"
-    },
-    {
-      "name": "com.amazonaws.ecs.capability.ecr-auth"
-    },
-    {
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
-    },
-    {
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
-    },
-    {
-      "name": "ecs.capability.container-health-check"
-    },
-    {
-      "name": "ecs.capability.execution-role-ecr-pull"
-    },
-    {
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
-    },
-    {
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
-    }
-  ],
   "placementConstraints": [],
   "compatibilities": [
     "EC2"
